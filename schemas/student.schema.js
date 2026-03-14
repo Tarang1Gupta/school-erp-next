@@ -1,0 +1,87 @@
+import { z } from "zod"
+
+export const basicDetailsSchema = z.object({
+  registrationNo:     z.string().optional(),
+  studentName:        z.string().min(2, "Student name required"),
+  dob:                z.string().min(1, "Date of birth required"),
+  class:              z.string().min(1, "Class required"),
+  section:            z.string().optional(),
+  gender:             z.string().min(1, "Gender required"),
+  bloodGroup:         z.string().optional(),
+  aadharNo:           z.string().optional(),
+  penNo:              z.string().optional(),
+  mobileNo:           z.string().optional(),
+  religion:           z.string().optional(),
+  nationality:        z.string().optional(),
+  category:           z.string().optional(),
+  rte:                z.string().optional(),
+  bplStudent:         z.string().optional(),
+  bplCardNo:          z.string().optional(),
+  pwd:                z.string().optional(),
+  identificationMark: z.string().optional(),
+  weight:             z.string().optional(),
+  height:             z.string().optional(),
+  bmi:                z.string().optional(),
+  covidVaccination:   z.string().optional(),
+})
+
+export const parentDetailsSchema = z.object({
+  fatherName:           z.string().min(2, "Father name required"),
+  fatherMobile:         z.string().min(10, "Valid mobile required"),
+  fatherEmail:          z.string().optional(),
+  fatherQualification:  z.string().optional(),
+  fatherOccupation:     z.string().optional(),
+  fatherOrgName:        z.string().optional(),
+  fatherDesignation:    z.string().optional(),
+  fatherIncome:         z.string().optional(),
+  motherName:           z.string().min(2, "Mother name required"),
+  motherMobile:         z.string().min(10, "Valid mobile required"),
+  motherEmail:          z.string().optional(),
+  motherQualification:  z.string().optional(),
+  motherOccupation:     z.string().optional(),
+  motherOrgName:        z.string().optional(),
+  motherDesignation:    z.string().optional(),
+  motherIncome:         z.string().optional(),
+  guardianName:         z.string().optional(),
+  guardianMobile:       z.string().optional(),
+  guardianEmail:        z.string().optional(),
+  guardianQualification:z.string().optional(),
+  guardianOccupation:   z.string().optional(),
+  guardianOrgName:      z.string().optional(),
+  guardianDesignation:  z.string().optional(),
+  guardianIncome:       z.string().optional(),
+})
+
+export const addressSchema = z.object({
+  presentLine1:   z.string().min(1, "Address required"),
+  presentLine2:   z.string().optional(),
+  presentCity:    z.string().min(1, "City required"),
+  presentState:   z.string().min(1, "State required"),
+  presentPincode: z.string().min(6, "Valid pincode required"),
+  permanentLine1: z.string().optional(),
+  permanentLine2: z.string().optional(),
+  permanentCity:  z.string().optional(),
+  permanentState: z.string().optional(),
+  permanentPincode:z.string().optional(),
+})
+
+export const previousSchoolSchema = z.object({
+  schoolName:    z.string().min(2, "School name required"),
+  schoolAddress: z.string().optional(),
+  udiseCode:     z.string().optional(),
+  board:         z.string().min(1, "Board required"),
+  tcNumber:      z.string().optional(),
+  lastClass:     z.string().min(1, "Last class required"),
+  yearOfPassing: z.string().min(1, "Year required"),
+  percentage:    z.string().optional(),
+  medium:        z.string().optional(),
+  tcAvailable:   z.string().optional(),
+  remarks:       z.string().optional(),
+})
+
+export const feePaymentSchema = z.object({
+  paymentMode:     z.string().min(1, "Payment mode required"),
+  transactionId:   z.string().optional(),
+  receiptDate:     z.string().optional(),
+  paymentRemarks:  z.string().optional(),
+})

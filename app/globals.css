@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Dark mode class based */
+@variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Custom colors */
+@theme {
+  --color-primary: #137fec;
+  --color-bg-light: #f6f7f8;
+  --color-bg-dark: #101922;
+
+  --font-family-sans: "Manrope", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
