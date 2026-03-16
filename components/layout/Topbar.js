@@ -10,7 +10,7 @@ export default function Topbar({ title = "Admin Dashboard", subtitle = "Welcome 
   const user = useAuthStore((s) => s.user)
 
   return (
-    <header className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-[#1a2632] px-6 py-4 flex-shrink-0 z-10">
+    <header className="sticky top-0 flex items-center justify-between border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-[#1a2632] px-6 py-4 flex-shrink-0 z-10">
 
       {/* Left */}
       <div className="flex items-center gap-4">

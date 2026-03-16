@@ -22,7 +22,7 @@ const actions = [
   },
   {
     label: "Admission",
-    href: "/admission/new",
+    href: "/students/new-admission",
     icon: MdHowToReg,
     bg: "bg-indigo-50 dark:bg-indigo-900/20",
     text: "text-indigo-600",
