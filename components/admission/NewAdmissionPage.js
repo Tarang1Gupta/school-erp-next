@@ -14,7 +14,7 @@ import AddressDetailsForm from "@/components/admission/AddressDetailsForm"
 import PreviousSchoolForm from "@/components/admission/PreviousSchoolForm"
 import DocumentsForm from "@/components/admission/DocumentsForm"
 import FeeAssignmentForm from "@/components/admission/FeeAssignmentForm"
-// import ReviewSubmitForm from "@/components/admission/ReviewSubmitForm"
+import ReviewSubmitForm from "@/components/admission/ReviewSubmitForm"
 
 import { stepSchemas, fullSchema } from "@/schemas/admission.schema"
 

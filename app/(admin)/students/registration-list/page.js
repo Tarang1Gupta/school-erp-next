@@ -255,7 +255,7 @@ export default function RegistrationListPage() {
                       </td>
                       <td className="p-4">
                         <div className="flex items-center justify-center gap-2">
-                          <Link href="/students/new-registration">
+                          <Link href="/students/new-admission">
                             <button
                               disabled={btn.disabled}
                               className={`text-[11px] font-bold px-3 py-1.5 rounded transition-colors ${btn.cls}`}

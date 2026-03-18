@@ -78,16 +78,19 @@ export const basicDetailsFields = [
     label: "Mobile No.",
     type: "tel",
     placeholder: "Enter Mobile No.",
+    required: true,
   },
   {
     name: "religion",
     label: "Religion",
     type: "text",
+    required: true,
   },
   {
     name: "nationality",
     label: "Nationality",
     type: "text",
+    required: true,
   },
 
   // Row 5
@@ -95,6 +98,7 @@ export const basicDetailsFields = [
     name: "category",
     label: "Category",
     type: "select",
+    required: true,
     options: [
       { value: "general", label: "General" },
       { value: "obc",     label: "OBC" },
@@ -106,6 +110,7 @@ export const basicDetailsFields = [
     name: "rte",
     label: "Right to Education (Yes/No)",
     type: "select",
+    required: true,
     options: [
       { value: "yes", label: "Yes" },
       { value: "no",  label: "No" },
@@ -115,6 +120,7 @@ export const basicDetailsFields = [
     name: "bplStudent",
     label: "BPL Student (Yes/No)",
     type: "select",
+    required: true,
     options: [
       { value: "yes", label: "Yes" },
       { value: "no",  label: "No" },
@@ -131,6 +137,7 @@ export const basicDetailsFields = [
     name: "pwd",
     label: "Person with Disability (PwD)",
     type: "select",
+    required: true,
     options: [
       { value: "no",  label: "No" },
       { value: "yes", label: "Yes" },
@@ -178,33 +185,33 @@ export const basicDetailsFields = [
 export const fatherFields = [
   { name: "fatherName",          label: "Father Name",              type: "text",   placeholder: "e.g. Robert Smith",      required: true },
   { name: "fatherMobile",        label: "Mobile No.",               type: "tel",    placeholder: "+91 00000 00000",        required: true },
-  { name: "fatherEmail",         label: "Email ID",                 type: "email",  placeholder: "robert@example.com" },
+  { name: "fatherEmail",         label: "Email ID",                 type: "email",  placeholder: "robert@example.com",     required: true },
   { name: "fatherQualification", label: "Educational Qualification",type: "text",   placeholder: "e.g. Graduate" },
-  { name: "fatherOccupation",    label: "Occupation",               type: "text",   placeholder: "e.g. Engineer" },
+  { name: "fatherOccupation",    label: "Occupation",               type: "text",   placeholder: "e.g. Engineer",          required: true },
   { name: "fatherOrgName",       label: "Organization Name",        type: "text",   placeholder: "Company Name" },
   { name: "fatherDesignation",   label: "Designation",              type: "text",   placeholder: "e.g. Manager" },
-  { name: "fatherIncome",        label: "Annual Income (₹)",        type: "number", placeholder: "e.g. 500000" },
+  { name: "fatherIncome",        label: "Annual Income (₹)",        type: "number", placeholder: "e.g. 500000",            required: true },
 ]
 
 // ── Mother Fields ──────────────────────────────────────────────────────────
 export const motherFields = [
   { name: "motherName",          label: "Mother Name",              type: "text",   placeholder: "e.g. Jane Smith",        required: true },
   { name: "motherMobile",        label: "Mobile No.",               type: "tel",    placeholder: "+91 00000 00000",        required: true },
-  { name: "motherEmail",         label: "Email ID",                 type: "email",  placeholder: "jane@example.com" },
+  { name: "motherEmail",         label: "Email ID",                 type: "email",  placeholder: "jane@example.com",       required: true },
   { name: "motherQualification", label: "Educational Qualification",type: "text",   placeholder: "e.g. Post Graduate" },
-  { name: "motherOccupation",    label: "Occupation",               type: "text",   placeholder: "e.g. Teacher" },
+  { name: "motherOccupation",    label: "Occupation",               type: "text",   placeholder: "e.g. Teacher",           required: true },
   { name: "motherOrgName",       label: "Organization Name",        type: "text",   placeholder: "Company Name" },
   { name: "motherDesignation",   label: "Designation",              type: "text",   placeholder: "e.g. Headmistress" },
-  { name: "motherIncome",        label: "Annual Income (₹)",        type: "number", placeholder: "e.g. 400000" },
+  { name: "motherIncome",        label: "Annual Income (₹)",        type: "number", placeholder: "e.g. 400000",            required: true },
 ]
 
 // ── Guardian Fields ────────────────────────────────────────────────────────
 export const guardianFields = [
-  { name: "guardianName",          label: "Guardian's Name",          type: "text",   placeholder: "Full Name" },
-  { name: "guardianMobile",        label: "Mobile No.",               type: "tel",    placeholder: "+91 00000 00000" },
+  { name: "guardianName",          label: "Guardian's Name",          type: "text",   placeholder: "Full Name",              required: true },
+  { name: "guardianMobile",        label: "Mobile No.",               type: "tel",    placeholder: "+91 00000 00000",        required: true },
   { name: "guardianEmail",         label: "Email ID",                 type: "email",  placeholder: "guardian@example.com" },
   { name: "guardianQualification", label: "Educational Qualification",type: "text" },
-  { name: "guardianOccupation",    label: "Occupation",               type: "text" },
+  { name: "guardianOccupation",    label: "Occupation",               type: "text",   required: true },
   { name: "guardianOrgName",       label: "Organization Name",        type: "text" },
   { name: "guardianDesignation",   label: "Designation",              type: "text" },
   { name: "guardianIncome",        label: "Annual Income (₹)",        type: "number" },
@@ -249,6 +256,7 @@ export const previousSchoolFields = [
     label: "School Address",
     type: "text",
     placeholder: "Enter school address",
+    required: true,
     colSpan: 2,
   },
   {
@@ -272,6 +280,7 @@ export const previousSchoolFields = [
     label: "T.C. Number",
     type: "text",
     placeholder: "Enter Transfer Certificate Number",
+    required: true,
   },
   {
     name: "lastClass",
@@ -299,6 +308,7 @@ export const previousSchoolFields = [
     label: "Percentage / Grade Obtained",
     type: "text",
     placeholder: "e.g. 85% or A+",
+    required: true,
   },
   {
     name: "medium",
@@ -315,6 +325,7 @@ export const previousSchoolFields = [
     name: "tcAvailable",
     label: "Is Transfer Certificate (TC) Available?",
     type: "radio",
+    required: true,
     colSpan: 2,
     options: [
       { value: "yes", label: "Yes" },
@@ -352,6 +363,7 @@ export const rightFields = [
     name: "receiptDate",
     label: "Receipt Date",
     type: "date",
+    required: true,
   },
   {
     name: "paymentRemarks",
