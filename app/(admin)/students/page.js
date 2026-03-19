@@ -73,32 +73,7 @@ export default function StudentsPage() {
           </div>
         </section>
 
-        {/* Header row */}
-        <div className="flex items-center justify-between">
-          <div>
-            <h3 className="text-slate-900 dark:text-white text-lg font-bold">All Students</h3>
-            <p className="text-slate-500 dark:text-slate-400 text-sm mt-0.5">Total enrolled students list</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <Link
-              href="/students/import"
-              className="px-4 py-2 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 rounded-lg text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition"
-            >
-              Import Excel
-            </Link>
-            <Link
-              href="/students/new"
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700 transition font-medium"
-            >
-              + Add Student
-            </Link>
-          </div>
-        </div>
-
-        {/* Table */}
-        <div className="bg-white dark:bg-[#1a2632] rounded-xl border border-slate-200 dark:border-slate-800 p-5">
-          <p className="text-sm text-slate-400">Student data table will render here (TanStack Table)</p>
-        </div>
+        
 
       </div>
     </>
