@@ -7,29 +7,18 @@ import {
   MdCampaign, MdQuiz, MdPayments, MdWorkspacePremium,
   MdInventory2, MdReceiptLong, MdBadge, MdLocalLibrary,
   MdSettings, MdSchool, MdExpandMore,
+  MdEventNote, MdSchedule, MdLeaderboard, MdCardMembership,
+  MdAccountBalance, MdPendingActions, MdReceipt, MdNoteAlt,
+  MdPeople, MdAttachMoney, MdAccessTime, MdBook, MdSwapHoriz,
+  MdManageAccounts, MdSupervisorAccount, MdCampaignOutlined,
 } from "react-icons/md"
 
 const MENU = [
-  { icon: MdDashboard, label: "Dashboard", link: "/dashboard" },
-  { icon: MdGroups,    label: "Student",   link: "/students" },
-  { icon: MdCalendarToday, label: "Attendance", link: "/attendance" },
-  {
-    icon: MdMenuBook, label: "Academic", link: "/academic",
-    sub: [
-      { label: "Classes",   link: "/classes" },
-      { label: "Subjects",  link: "/exams" },
-      { label: "Timetable", link: "/timetable" },
-      { label: "Homework",  link: "/homework" },
-    ],
-  },
-  {
-    icon: MdCampaign, label: "Events & Circular", link: "/communication",
-    sub: [
-      { label: "Events",    link: "/calendar" },
-      { label: "Circulars", link: "/communication/notices" },
-      { label: "Notices",   link: "/communication/sms" },
-    ],
-  },
+  { icon: MdDashboard,       label: "Dashboard",        link: "/dashboard" },
+  { icon: MdGroups,          label: "Student",          link: "/students" },
+  { icon: MdCalendarToday,   label: "Attendance",       link: "/attendance" },
+  { icon: MdMenuBook,        label: "Academic",         link: "/academic" },
+  { icon: MdCampaign,        label: "Events & Circular",link: "/communication" },
   {
     icon: MdQuiz, label: "Examination", link: "/exams",
     sub: [
@@ -62,13 +51,7 @@ const MENU = [
       { label: "Issue", link: "/inventory/issue" },
     ],
   },
-  {
-    icon: MdReceiptLong, label: "Expenses", link: "/reports/finance",
-    sub: [
-      { label: "Add Expense",   link: "/reports/finance" },
-      { label: "Expense List",  link: "/reports/finance" },
-    ],
-  },
+  { icon: MdReceiptLong,        label: "Expenses",link: "/expenses" },
   {
     icon: MdBadge, label: "HR & Payroll", link: "/payroll",
     sub: [
@@ -80,7 +63,7 @@ const MENU = [
   {
     icon: MdLocalLibrary, label: "Library", link: "/library",
     sub: [
-      { label: "Books",        link: "/library" },
+      { label: "Books",          link: "/library" },
       { label: "Issue & Return", link: "/library/issue" },
     ],
   },
