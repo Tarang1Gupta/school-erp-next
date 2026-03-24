@@ -20,14 +20,7 @@ const actions = [
     icon: MdReceiptLong,
     bg: "bg-indigo-50 dark:bg-indigo-900/20",
     text: "text-indigo-600",
-  },
-  {
-    label: "Categories",
-    href: "/expenses/categories",
-    icon: MdCategory,
-    bg: "bg-amber-50 dark:bg-amber-900/20",
-    text: "text-amber-600",
-  },
+  }
 ];
 
 export default function ExpensesPage() {
