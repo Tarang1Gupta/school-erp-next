@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from "react"
 
-export function     DynamicFormLayout({
+export function  DynamicFormLayout({
   fields,
   register,
   setValue,
